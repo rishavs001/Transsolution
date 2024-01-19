@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <nav class="navbar  sticky-top navbar-expand-lg " style="background-color: #FFD95A;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="https://icons.getbootstrap.com/assets/icons/truck.svg" alt="Bootstrap"
+          width="30" height="24"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+
+    <h1>Hi user</h1>
+    <br />
+    <form>
+      <div class="row bg-warning bg-opacity-25">
+        <div class="mb-3 col-1 ">
+          <label class="form-label" for="tripNo" class="form-label class=">Trip No.</label>
+          <input class="form-control" type="number" class="form-control" id="tripNo">
+        </div>
+        <div class="mb-3 col-2">
+          <label class="form-label" for="triDate" class="form-label class=">Trip Date</label>
+          <input class="form-control" type="date" class="form-control" id="tripDate">
+        </div>
+
+        <div class="mb-3 col-2">
+          <label class="form-label" for="endDate" class="form-label">End Date</label>
+          <input class="form-control" type="date" class="form-control" id="endDate" placeholder="End Date" />
+        </div>
+        <div class="mb-3 col-2">
+          <label class="form-label" for="triTime" class="form-label">Trip Time</label>
+          <input class="form-control" type="time" class="form-control" id="tripTime">
+        </div>
+        <div class="mb-3 col-2">
+          <label class="form-label" for="endTime" class="form-label">End Time</label>
+          <input class="form-control" type="time" class="form-control" id="endTime" placeholder="End Time" />
+        </div>
+        <div class="mb-3 col-1">
+          <label class="form-label" for="tripDays" class="form-label">Trip Days</label>
+          <input class="form-control" type="number" class="form-control" id="tripDays" placeholder="Trip Days" />
+        </div>
+        <div class="mb-3 col-2">
+          <label class="form-label" for="vehicleNo" class="form-label">Vehicle No.</label>
+          <input class="form-control" type="text" id="vehicleNo" class="form-control" placeholder="Vehicle No" />
+        </div>
+        <!-- </div>
+
+
+        <div class="row"> -->
+        <div class="mb-3 col-1">
+
+          <label class="form-label" for="dieselQty" class="form-label">Diesel (Ltr)</label>
+          <input class="form-control" type="number" id="dieselQty" placeholder="Lt" class="form-control" />
+        </div>
+
+        <div class="mb-3 col-1">
+
+          <label class="form-label" for="dieselRate">Diesel Rate</label>
+          <input class="form-control" type="number" id="dieselRate" placeholder="Rate" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="dieselAmt">Diesel (Amt)</label>
+          <input class="form-control" type="number" id="dieselAmt" placeholder="Amount" />
+        </div>
+        <div class="mb-3 col-1">
+
+          <label class="form-label" for="tollTax">Toll Tax</label>
+          <input class="form-control" type="number" id="tollTax" placeholder="Toll Tax" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="adBlueQty">Ad Blue (Ltr)</label>
+          <input class="form-control" type="number" id="adBlueQty" placeholder="Ad Blue (Ltr)" />
+        </div>
+        <div class="mb-3 col-1">
+
+          <label class="form-label" for="adBlueAmt">Ad Blue</label>
+          <input class="form-control" type="number" id="adBlueAmt" placeholder="Ad Blue" />
+        </div>
+        <div class="mb-3 col-1">
+
+          <label class="form-label" for="fixedDA">Fixed DA</label>
+          <input class="form-control" type="number" id="fixedDA" placeholder="Fixed DA" />
+        </div>
+        <div class="mb-3 col-1">
+
+          <label class="form-label" for="extraDA">Extra DA</label>
+          <input class="form-control" type="number" id="extraDA" placeholder="Extra DA" />
+        </div>
+        <div class="mb-3 col-2">
+          <label class="form-label" for="opKM">OP KM</label>
+          <input class="form-control" type="number" id="opKM" placeholder="OP KM" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="ciKM">CI KM</label>
+          <input class="form-control" type="number" id="ciKM" placeholder="CI KM" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="totalKM">Total KM</label>
+          <input class="form-control" type="number" id="totalKM" placeholder="Total KM" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="approxKM">Approx. KM</label>
+          <input class="form-control" type="number" id="approxKM" placeholder="Approx. KM" />
+        </div>
+
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="cashToll">Cash Toll</label>
+          <input class="form-control" type="number" id="cashToll" placeholder="Cash Toll" />
+        </div>
+      </div>
+      <hr>
+      <div class="mb-3 col bg-warning bg-opacity-25">
+
+        <div class="input-group  bg-warning bg-opacity-25">
+
+          <span class="input-group-text row-6 bg-warning bg-opacity-25">Loading Charges</span>
+          <input type="number" aria-label="Up" id="up" class="form-control" placeholder="Up`">
+          <input type="number" aria-label="Down" id="down" class="form-control" placeholder="Down">
+
+          <span class="input-group-text row-6 bg-warning bg-opacity-25">Unloading Charges</span>
+          <input type="number" aria-label="Up" id="up" class="form-control" placeholder="Up`">
+          <input type="number" aria-label="Down" id="down" class="form-control" placeholder="Down">
+
+        </div>
+      </div>
+
+
+      <h3> Border Exp</h3> <br />
+      <hr>
+      <div class="input-group bg-warning bg-opacity-25">
+        <span class="input-group-text bg-warning bg-opacity-25">Border Exp</span>
+        <input type="text" aria-label="bangal" class="form-control" placeholder="Bangal">
+        <input type="text" aria-label="odisha" class="form-control" placeholder="odisha">
+        <input type="text" aria-label="Chhattisgarh" class="form-control" placeholder="Chhattisgarh">
+        <input type="text" aria-label="Maharashtra" class="form-control" placeholder="Maharashtra">
+      </div>
+      <hr>
+      <div class="mb-3 row bg-warning bg-opacity-25">
+        <div class="mb-3 col-2">
+          <label class="form-label" for="parking"></label>
+          <input class="form-control" type="number" id="parking" placeholder="Parking" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="policeExp"></label>
+          <input class="form-control" type="number" id="policeExp" placeholder="Police Exp" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="kata"></label>
+          <input class="form-control" type="number" id="kata" placeholder="Kata" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="washing"></label>
+          <input class="form-control" type="number" id="washing" placeholder="Washing" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="greasing"></label>
+          <input class="form-control" type="number" id="greasing" placeholder="Greasing" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="maintenance"></label>
+          <input class="form-control" type="number" id="maintenance" placeholder="Maintenance" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="vehicleAccessory"></label>
+          <input class="form-control" type="number" id="vehicleAccessory" placeholder="Vehicle Accessory" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="salary"></label>
+          <input class="form-control" type="number" id="salary" placeholder="Salary" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="incentive"></label>
+          <input class="form-control" type="number" id="incentive" placeholder="Incentive" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="otherExp"></label>
+          <input class="form-control" type="number" id="otherExp" placeholder="Other Exp" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="totalExp"></label>
+          <input class="form-control" type="number" id="totalExp" placeholder="Total Exp" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="dieselQty2"></label>
+          <input class="form-control" type="number" id="dieselQty2" placeholder="Diesel (Ltr)" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="dieselAmt2"></label>
+          <input class="form-control" type="number" id="dieselAmt2" placeholder="Diesel" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="cash"></label>
+          <input class="form-control" type="number" id="cash" placeholder="Cash" />
+        </div>
+        <div class="mb-3 col-2">
+          <label class="form-label" for="payableRecovery"></label>
+          <input class="form-control" type="number" id="payableRecovery" placeholder="Payable/Recovery" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="tyreExp"></label>
+          <input class="form-control" type="number" id="tyreExp" placeholder="Tyre Exp" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="freight"></label>
+          <input class="form-control" type="number" id="freight" placeholder="Freight" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="loading"></label>
+          <input class="form-control" type="number" id="loading" placeholder="Loading" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="unloading"></label>
+          <input class="form-control" type="number" id="unloading" placeholder="Unloading" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="otherIncome"></label>
+          <input class="form-control" type="number" id="otherIncome" placeholder="Other Income" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="deduction"></label>
+          <input class="form-control" type="number" id="deduction" placeholder="Deduction" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="totalIncome"></label>
+          <input class="form-control" type="number" id="totalIncome" placeholder="Total Income" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="saving"></label>
+          <input class="form-control" type="number" id="saving" placeholder="Saving" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="excessDiesel"></label>
+          <input class="form-control" type="number" id="excessDiesel" placeholder="Excess Diesel" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="loadingDif"></label>
+          <input class="form-control" type="number" id="loadingDif" placeholder="Loading Dif" />
+        </div>
+        <div class="mb-3 col-2">
+
+          <label class="form-label" for="unloadingDif"></label>
+          <input class="form-control" type="number" id="unloadingDif" placeholder="Unloading Dif" />
+        </div>
+      </div>
+      <!-- 2nd Route expanded -->
+      <div class="accordion " id="2ndroute">
+        <div class="accordion-item border-warning">
+          <h2 class="accordion-header bg-warning ">
+            <button class="accordion-button border-warning bg-warning " type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              2nd Route
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#2ndroute">
+            <div class="accordion-body  ">
+              <div class="mb-3 row bg-warning bg-opacity-25">
+                <h3></u>2ND Route</h3>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="BookingDate">Booking Date</label>
+                  <input class="form-control" type="date" id="BookingDate" placeholder="Booking Date" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="INVOICE">INVOICE</label>
+                  <input class="form-control" type="number" id="INVOICE" placeholder="INVOICE  " />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="PARTY">PARTY</label>
+                  <input class="form-control" type="number" id="PARTY" placeholder="PARTY" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="FROM">FROM</label>
+                  <input class="form-control" type="number" id="FROM" placeholder="FROM" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="TO">TO</label>
+                  <input class="form-control" type="number" id="TO" placeholder="TO" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="FreightCharge">Freight Charge</label>
+                  <input class="form-control" type="number" id="FreightCharge" placeholder="Freight Charge" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="LoadingCharges">Loading Charges </label>
+                  <input class="form-control" type="number" id="LoadingCharges" placeholder="Loading Charges" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="UnloadingCharges">Unloading Charges </label>
+                  <input class="form-control" type="number" id="UnloadingCharges" placeholder="Unloading Charges" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="LoadDetention">Load Detention</label>
+                  <input class="form-control" type="number" id="LoadDetention" placeholder="Load Detention" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="UnloadDetention">Unload Detention</label>
+                  <input class="form-control" type="number" id="UnloadDetention" placeholder="Unload Detention" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="PODBonus">POD Bonus</label>
+                  <input class="form-control" type="number" id="PODBonus" placeholder="PODBonus" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="OverLoading">Over Loading</label>
+                  <input class="form-control" type="number" id="OverLoading" placeholder="Over Loading" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="MultiPoint">Multi Point</label>
+                  <input class="form-control" type="number" id="MultiPoint" placeholder="MultiPoint" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="OtherIncome">Other Income</label>
+                  <input class="form-control" type="number" id="OtherIncome" placeholder="Other Income" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="TotalIncome">Total Income</label>
+                  <input class="form-control" type="number" id="TotalIncome" placeholder="Total Income" />
+                </div>
+
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="ChallanCharge">Challan Charge</label>
+                  <input class="form-control" type="number" id="ChallanCharge" placeholder="Challan Charge" />
+                </div>
+
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="UNLOADWARAI">UNLOAD WARAI</label>
+                  <input class="form-control" type="number" id="UNLOADWARAI" placeholder="UNLOAD WARAI" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="Commission">Commission</label>
+                  <input class="form-control" type="number" id="Commission" placeholder="Commission" />
+                </div>
+
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="TDS">TDS</label>
+                  <input class="form-control" type="number" id="TDS" placeholder="TDS" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="Shortage&Damage">Shortage & Damage</label>
+                  <input class="form-control" type="number" id="Shortage&Damage" placeholder="Shortage & Damage" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="OtherExpenses">Other Expenses</label>
+                  <input class="form-control" type="number" id="OtherExpenses" placeholder="Other Expenses" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3rd Route expanded -->
+
+        <div class="accordion-item border-warning">
+          <h2 class="accordion-header border-warning">
+            <button class="accordion-button collapsed bg-warning border-warning" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              3rd Route
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#2ndroute">
+            <div class="accordion-body">
+              <div class="mb-3 row bg-warning bg-opacity-25">
+                <h3></u>3rd Route</h3>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="BookingDate">Booking Date</label>
+                  <input class="form-control" type="date" id="BookingDate" placeholder="Booking Date" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="INVOICE">INVOICE</label>
+                  <input class="form-control" type="number" id="INVOICE" placeholder="INVOICE  " />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="PARTY">PARTY</label>
+                  <input class="form-control" type="number" id="PARTY" placeholder="PARTY" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="FROM">FROM</label>
+                  <input class="form-control" type="number" id="FROM" placeholder="FROM" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="TO">TO</label>
+                  <input class="form-control" type="number" id="TO" placeholder="TO" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="FreightCharge">Freight Charge</label>
+                  <input class="form-control" type="number" id="FreightCharge" placeholder="Freight Charge" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="LoadingCharges">Loading Charges </label>
+                  <input class="form-control" type="number" id="LoadingCharges" placeholder="Loading Charges" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="UnloadingCharges">Unloading Charges </label>
+                  <input class="form-control" type="number" id="UnloadingCharges" placeholder="Unloading Charges" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="LoadDetention">Load Detention</label>
+                  <input class="form-control" type="number" id="LoadDetention" placeholder="Load Detention" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="UnloadDetention">Unload Detention</label>
+                  <input class="form-control" type="number" id="UnloadDetention" placeholder="Unload Detention" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="PODBonus">POD Bonus</label>
+                  <input class="form-control" type="number" id="PODBonus" placeholder="PODBonus" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="OverLoading">Over Loading</label>
+                  <input class="form-control" type="number" id="OverLoading" placeholder="Over Loading" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="MultiPoint">Multi Point</label>
+                  <input class="form-control" type="number" id="MultiPoint" placeholder="MultiPoint" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="OtherIncome">Other Income</label>
+                  <input class="form-control" type="number" id="OtherIncome" placeholder="Other Income" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="TotalIncome">Total Income</label>
+                  <input class="form-control" type="number" id="TotalIncome" placeholder="Total Income" />
+                </div>
+
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="ChallanCharge">Challan Charge</label>
+                  <input class="form-control" type="number" id="ChallanCharge" placeholder="Challan Charge" />
+                </div>
+
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="UNLOADWARAI">UNLOAD WARAI</label>
+                  <input class="form-control" type="number" id="UNLOADWARAI" placeholder="UNLOAD WARAI" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="Commission">Commission</label>
+                  <input class="form-control" type="number" id="Commission" placeholder="Commission" />
+                </div>
+
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="TDS">TDS</label>
+                  <input class="form-control" type="number" id="TDS" placeholder="TDS" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="Shortage&Damage">Shortage & Damage</label>
+                  <input class="form-control" type="number" id="Shortage&Damage" placeholder="Shortage & Damage" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="OtherExpenses">Other Expenses</label>
+                  <input class="form-control" type="number" id="OtherExpenses" placeholder="Other Expenses" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 4th Route expanded -->
+
+
+        <div class="accordion-item  border-warning">
+          <h2 class="accordion-header ">
+            <button class="accordion-button collapsed bg-warning " type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              4th Route
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#2ndroute">
+            <div class="accordion-body ">
+
+              <h3></u>4th Route</h3>
+              <div class="mb-3 row bg-warning bg-opacity-25">
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="BookingDate">Booking Date</label>
+                  <input class="form-control" type="date" id="BookingDate" placeholder="Booking Date" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="INVOICE">INVOICE</label>
+                  <input class="form-control" type="number" id="INVOICE" placeholder="INVOICE  " />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="PARTY">PARTY</label>
+                  <input class="form-control" type="number" id="PARTY" placeholder="PARTY" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="FROM">FROM</label>
+                  <input class="form-control" type="number" id="FROM" placeholder="FROM" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="TO">TO</label>
+                  <input class="form-control" type="number" id="TO" placeholder="TO" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="FreightCharge">Freight Charge</label>
+                  <input class="form-control" type="number" id="FreightCharge" placeholder="Freight Charge" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="LoadingCharges">Loading Charges </label>
+                  <input class="form-control" type="number" id="LoadingCharges" placeholder="Loading Charges" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="UnloadingCharges">Unloading Charges </label>
+                  <input class="form-control" type="number" id="UnloadingCharges" placeholder="Unloading Charges" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="LoadDetention">Load Detention</label>
+                  <input class="form-control" type="number" id="LoadDetention" placeholder="Load Detention" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="UnloadDetention">Unload Detention</label>
+                  <input class="form-control" type="number" id="UnloadDetention" placeholder="Unload Detention" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="PODBonus">POD Bonus</label>
+                  <input class="form-control" type="number" id="PODBonus" placeholder="PODBonus" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="OverLoading">Over Loading</label>
+                  <input class="form-control" type="number" id="OverLoading" placeholder="Over Loading" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="MultiPoint">Multi Point</label>
+                  <input class="form-control" type="number" id="MultiPoint" placeholder="MultiPoint" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="OtherIncome">Other Income</label>
+                  <input class="form-control" type="number" id="OtherIncome" placeholder="Other Income" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="TotalIncome">Total Income</label>
+                  <input class="form-control" type="number" id="TotalIncome" placeholder="Total Income" />
+                </div>
+
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="ChallanCharge">Challan Charge</label>
+                  <input class="form-control" type="number" id="ChallanCharge" placeholder="Challan Charge" />
+                </div>
+
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="UNLOADWARAI">UNLOAD WARAI</label>
+                  <input class="form-control" type="number" id="UNLOADWARAI" placeholder="UNLOAD WARAI" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="Commission">Commission</label>
+                  <input class="form-control" type="number" id="Commission" placeholder="Commission" />
+                </div>
+
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="TDS">TDS</label>
+                  <input class="form-control" type="number" id="TDS" placeholder="TDS" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="Shortage&Damage">Shortage & Damage</label>
+                  <input class="form-control" type="number" id="Shortage&Damage" placeholder="Shortage & Damage" />
+                </div>
+                <div class="mb-3 col-2">
+                  <label class="form-label" for="OtherExpenses">Other Expenses</label>
+                  <input class="form-control" type="number" id="OtherExpenses" placeholder="Other Expenses" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <br><br>
+      <div class="row">
+
+        <div class="d-grid gap-1 col-3 mx-auto">
+          <button class="btn btn-warning btn-lg">Submit</button>
+        </div>
+
+        <div class="d-grid gap-1 col-3 mx-auto">
+          <button type="button" class="btn btn-danger btn-lg ">Reset</button>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+  <br><br>
+  <div class="card border-warning mb-3">
+    <div class="card-footer bg-transparent border-warning">Footer</div>
+  </div>
+
+</body>
+
+</html>

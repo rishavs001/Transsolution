@@ -1,0 +1,168 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.form-group-1 input,
+.form-group-2 input,
+.form-group-3 input,
+.form-group-4 input,
+.form-group-5 input,
+.form-group-6 input,
+.form-group-7 input,
+.form-group-8 input,
+.form-group-9 input,
+.form-group-10 input,
+.sec-route,
+.third-route,
+.fourth-route {
+    outline: none;
+    font-size: .8rem;
+    border-radius: .2rem;
+    border: 1px solid rgb(113, 101, 101);
+    padding: .1rem;
+   }
+
+.form-group-1 {
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid;
+    margin: 10px;
+    background-color: rgb(75, 172, 198);
+
+}
+
+
+
+.form-group-2 {
+
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid;
+    margin: 10px;
+
+
+
+    background-color: rgb(84, 141, 212);
+}
+
+.form-group-3 {
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid;
+    margin: 10px;
+
+
+    background-color: rgb(255, 0, 0);
+}
+
+.form-group-4 {
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid;
+    margin: 10px;
+
+
+    background-color: rgb(118, 146, 60);
+}
+
+.form-group-5,
+.form-group-7,
+.form-group-10 {
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid;
+    margin: 10px;
+
+
+
+    background-color: rgb(84, 141, 212);
+}
+
+.form-group-6 {
+
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid;
+    margin: 10px;
+
+
+
+    background-color: rgb(227, 108, 9);
+}
+
+.form-group-8 {
+
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid;
+    margin: 10px;
+
+
+    background-color: rgb(0, 176, 80);
+}
+
+.form-group-9 {
+
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid;
+    margin: 10px;
+
+
+    background-color: rgb(44, 247, 252);
+}
+
+.submit-btn {
+
+    font-size: large;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 2px 30px;
+
+
+}
+
+.sec-route {
+
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid;
+    margin: 10px;
+
+
+    background-color: rgb(15, 171, 39);
+}
+
+.third-route {
+
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid;
+    margin: 10px;
+
+    background-color: chocolate;
+}
+
+.fourth-route {
+
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid;
+    margin: 10px;
+
+    background-color: violet;
+}
+
+
